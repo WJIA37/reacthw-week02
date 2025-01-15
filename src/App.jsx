@@ -23,7 +23,7 @@ function App() {
   }
 
 
-  const handleLogin = async (e) =>{
+  const handleLogin = (e) =>{
     e.preventDefault();
     axios.post(`${baseUrl}/v2/admin/signin`, account)
     .then((res) => {
